@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<link rel="stylesheet" href="styles/style1.css" >
+<script src="js/myScript.js"> </script>
+<title> My Shopping Cart </title>
+ </head>
+ 
+ <body>
+ 
+<img src="images/logo123.png" class="logo">
+<center> 
+
+
+<h2 class="font"> Shopping Cart </h2>
+<h3 class="font"> The Online shopping store </h3> 
+ 
+ 
+ </center>
+ <br>
+
+<hr>
+ 
+ <ul class="menu">
+ <li class="menu"><a href="index.html"> Home </a></li>
+ <li class="menu"><a href="news.html"> News </a></li>
+ <li class="menu"><a href="https://www.sliit.lk"> Contact </a></li>
+ <li class="menu"><a href="http://www.courseweb.sliit.lk"> About </a></li>
+ <li class="menu"><a href="#"> Register Now </a></li>
+ </ul>
+ <br><br>
+ 
+ <div class="font">
+ <form action="#" method="POST" target="_self" onsubmit="return checkPasswords()">
+ 
+	<label>First Name</label><br>
+	<input type="text" id="fname" name="fname" placeholder="Enter first name" style="width:800px;"> <br><br>
+	Last Name <br>
+	<input type="text" id="lname" name="lname" placeholder="Enter last name" style="width:800px;"> <br><br>
+	Gender <br>
+	<input type="radio" id="male" name="gender" checked>Male 
+	<input type="radio" id="female" name="gender">Female <br><br>
+	Mobile Number <br>
+	<input type="text" id="mNo" name="mNo" pattern="[0-9]{10}" style="width:800px;"> <br><br>
+	E-mail Address <br>
+	<input type="email" id="mail" name="mail" style="width:800px;" placeholder="someone@somthing.com" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.+[a-z]{2,3}"> <br><br>
+	Address <br>
+	<textarea id="add" name="add" rows="5" cols="50"> </textarea> <br><br>
+	
+	Choose your DOB<br>
+	<select id="day" name="day">
+		<option hidden>Please Select Year</option>
+		<option>1 </option><option>2 </option><option>3 </option><option>4 </option><option>5 </option><option>6 </option><option>7 </option><option>8 </option><option>9 </option><option>10 </option>
+		<option>11 </option><option>12 </option><option>13 </option><option>14 </option><option>15 </option><option>16 </option><option>17 </option><option>18 </option><option>19 </option><option>20 </option>
+		<option>21 </option><option>22 </option><option>23 </option><option>24 </option><option>25 </option><option>26 </option><option>27 </option><option>28 </option><option>29 </option><option>30 </option><option>31 </option>
+	</select>
+	
+	<select id="month" name="month">
+		<option selected="" hidden>Please Select Month</option>
+		<option>JAN </option><option>FEB </option><option>MAR </option>
+		<option>APR </option><option>MAY </option><option>JUN </option>
+		<option>JUL </option><option>AUG </option><option>SEP </option><option>OCT </option><option>NOV </option><option>DEC </option>
+	</select>
+	
+	<select id="year" name="year">
+		<option>1995 </option><option>1996 </option><option>1997 </option>
+		<option>1998 </option><option>1999 </option><option>2000 </option>
+		<option>2001 </option><option>2002 </option><option>2003 </option><option>2004 </option><option>2005 </option>
+		
+	</select>
+	<br><br>
+	
+	Password<br>
+	<input type="password" id="pwd" name="pwd" style="width:800px;" required pattern="[A-Za-z0-9]{5,10}"> <br><br>
+	Re-enter Password<br>
+	<input type="password" id="rpwd" name="rpwd" style="width:800px;" required pattern="[A-Za-z0-9]{5,10}"> <br><br>
+	
+	<input type="checkbox" id="policy" name="policy" onclick="enablebutton()" required>
+	Accept privacy policy and terms
+	
+	<br><br>
+	<input type="submit" id="btn" name="btn" value="Register" disabled>
+ </form>
+ </div>
+ 
+<hr> <br>
+
+ <div class="footer">
+ <center>
+ <h3 style="font-weight:bold; font-style:italic;"> Created by: Zaid Ahamed </h3>
+ <h3><a href="http://courseweb.sliit.lk/"> Visit our course </a> </h3>
+ </center>
+ </div>
+ 
+ </body>
+</html>

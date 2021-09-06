@@ -1,0 +1,97 @@
+@charset"utf-8";
+ body{
+	 background-image:url("../images/bgimage.jpg");
+	 
+ }	 
+
+ /*
+ p::first-line {
+			color:pink;
+			font-size:30px;
+	}
+ */
+
+ .logo{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:100px;
+	height:100px;
+	
+ }
+ 
+ .phone{
+	
+	width:200px;
+	height:200px;
+	
+ }
+ 
+ .font{
+	 
+	 font-family:Arial,Helvetica;
+	 /* font-size:20px; */
+	 color:white;
+	 
+ }
+ 
+ul.menu{
+	 list-style-type:none;
+	 margin:0;
+	 padding:0;
+	 overflow:hidden;
+	 background-color:black;
+ }
+ 
+li.menu{
+	 float:left;
+	 display:block;
+	 padding:20px 15px;
+	 text-align:center;
+	 color:white;
+	 text-decoration:none;
+}
+
+  li a{
+	 
+	 display:block;
+	 padding:10px 15px; /*top and bottom padding */
+	 /* padding:10px 15px 10px 15px;  (top right bottom left paddings */
+	 text-align:center;
+	 color:white;
+	 text-decoration:none;
+ }
+ 
+li a:hover{
+	background-color:#333;
+		
+}
+
+hr{
+	border:1px solid white;
+}
+
+.productData{
+	background-color:white;
+	margin:15px 10px 10px 10px;
+	border-style:solid;
+	border-color:red;
+	padding:3px 3px 3px 3px;
+}
+
+.footer{
+	font-family:"Times New Roman", "Courier New";
+	color:white;
+}
+/*
+div a:link{
+	color:black;
+}
+*/
+div a:visited{
+	color:yellow;
+}
+div a:hover{
+	color:black;
+}
+

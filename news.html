@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<font style="color:white;">
+ 
+	<link rel="stylesheet" href="styles/style1.css">
+	<script src="js/myScript.js"> </script>
+	<script>
+		
+		
+		var d = new Date();
+		var year = d.getFullYear();
+		var month = d.getMonth();
+		var day = d.getDate();
+		var fullDate = day + "/" + (month+1) + "/" + year;
+		document.write(fullDate);
+	</script>	
+	
+	</font>
+	<title> My Shopping Cart </title>
+ </head>
+ 
+ <body>
+<img src="images/logo123.png" class="logo">
+<center> 
+	<h2 class="font"> Shopping Cart </h2>
+	<h3 class="font"> The Online shopping store </h3> 
+</center>
+<br>
+<hr>
+ 
+<ul class="menu">
+	<li class="menu"><a href="index.html"> Home </a></li>
+	<li class="menu"><a href="#"> News </a></li>
+	<li class="menu"><a href="https://www.sliit.lk"> Contact </a></li>
+	<li class="menu"><a href="http://www.courseweb.sliit.lk"> About </a></li>
+	<li class="menu"><a href="register.html"> Register Now </a></li>
+ </ul>
+ <br> 
+<center>
+ <div class="buttons">
+	<button class="bttn" type="button" id="btn1" onclick="loadData('btn1')"> iPhone 6 </button>
+	<button class="bttn" type="button" id="btn2" onclick="loadData('btn2')"> iPhone 7 </button>
+	<button class="bttn" type="button" id="btn3" onclick="loadData('btn3')"> iPhone 8 </button>
+	<button class="bttn" type="button" id="btn4" onclick="loadData('btn4')"> iPhone X </button>
+	<button class="bttn" type="button" id="btn5" onclick="priceForLoop()"> AVG Price </button>
+	<button class="bttn" type="button" id="btn5" onclick="priceHigher()"> Prices higher than 1000 </button>
+	<button class="bttn" type="button" id="btn5" onclick="priceLower()"> Prices lower than 1000 </button>
+ </div>
+ <p></p>
+ <img id="img1"  class="phone">
+ <p class="text1" id="para" style="color:white;"> </p>
+
+ 
+ 
+ <hr>
+ <div class="footer">
+ <h3 style="font-weight:bold; font-style:italic;"> Created by: Zaid Ahamed </h3>
+ <h3><a href="http://courseweb.sliit.lk/"> Visit our course </a> </h3>
+</div>
+</center>
+</body>
+</html>
